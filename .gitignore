@@ -1,0 +1,44 @@
+# Android / Gradle
+local.properties
+.gradle/
+.kotlin/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Secrets and personal files — never commit
+.env
+.env.*
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+*.p12
+*.pem
+
+# Runtime data, dumps and logs
+*.log
+*.hprof
+*.db
+*.db-wal
+*.db-shm
+exports/
+backups/
+tools/*.zip
+tools/spec.txt
+
+# OS junk
+Thumbs.db
+desktop.ini

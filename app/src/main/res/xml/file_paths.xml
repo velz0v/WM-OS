@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Attachments copied out of SAF into app-private storage. -->
+    <files-path name="attachments" path="attachments/" />
+    <files-path name="inbox" path="inbox/" />
+</paths>

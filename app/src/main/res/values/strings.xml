@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WM OS</string>
+    <string name="notification_channel_reminders">Напоминания</string>
+    <string name="notification_channel_reminders_desc">Сигналы напоминаний WM OS</string>
+    <string name="reminder_action_open">Открыть</string>
+    <string name="reminder_action_done">Выполнено</string>
+    <string name="reminder_action_snooze">Отложить на 10 минут</string>
+    <string name="share_processing">Сохраняем материал…</string>
+</resources>

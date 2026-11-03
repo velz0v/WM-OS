@@ -1,0 +1,31 @@
+# ktlint / EditorConfig
+#
+# Style is enforced by ktlint (see app/build.gradle.kts and .github/workflows/android.yml).
+# Existing violations are captured in app/ktlint-baseline.xml, so the gate only stops new ones.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.{kt,kts}]
+max_line_length = off
+ij_kotlin_allow_trailing_comma = true
+ij_kotlin_allow_trailing_comma_on_call_site = true
+
+# Compose screens legitimately hold several top-level declarations per file
+# (screen + ViewModel + small helpers), and composable function names are PascalCase.
+ktlint_standard_filename = disabled
+ktlint_standard_function-naming = disabled
+ktlint_standard_value-argument-comment = disabled
+ktlint_standard_value-parameter-comment = disabled
+# Import ordering is handled by the IDE; ktlint's own ordering fights Compose imports.
+ktlint_standard_import-ordering = disabled
+# Long argument lists are common in Compose and are wrapped by hand for readability.
+ktlint_standard_multiline-expression-wrapping = disabled
+ktlint_standard_function-signature = disabled
